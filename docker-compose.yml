@@ -1,0 +1,11 @@
+services:
+  darshinidemo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: darshinidemo
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    environment:
+      - PORT=3001
