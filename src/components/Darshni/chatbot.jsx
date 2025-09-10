@@ -69,13 +69,19 @@ const Chatbot = () => {
 
             <p className='text-[24px] mb-2'>WhatsApp API will be Integrated</p>
 
-            <button
+            {/* <button
                 onClick={() => setIsOpen(true)}
-                className=" mt-3 px-3 w-32 py-2 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition absolute top-0 right-0">View Now</button>
+                className=" mt-3 px-3 w-32 py-2 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition absolute top-0 right-0">View Now</button> */}
 
             <div className="grid  grid-cols-8 bg-white font-sans "
                 style={{ height: "calc(100vh - 300px)", width: '100%', marginTop: 40, justifyContent: 'center', display: 'flex', alignSelf: 'center' }}
             >
+
+                 <img
+                            src="/assests/img/chat-box.png"
+                            alt="Representative"
+                            className="rounded-lg object-contain  w-full h-full"
+                        />
                 {/* <div className="hidden lg:block col-span-8 flex items-center justify-center">
              <DidAgent />
              </div> */}
@@ -88,7 +94,7 @@ const Chatbot = () => {
                 <DidAgent />
             </div> */}
 
-                <div className="col-span-8 lg:col-span-8 flex flex-col "
+                {/* <div className="col-span-8 lg:col-span-8 flex flex-col "
                     style={{ height: "calc(100vh - 300px)", width: '70%', marginTop: 40 }}>
                     <div className="flex-1 p-2 overflow-y-auto"
 
@@ -197,7 +203,7 @@ const Chatbot = () => {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {isOpen && (
